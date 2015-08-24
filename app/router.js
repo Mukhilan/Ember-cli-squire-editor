@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('rich-text-editor-div', {
+    path: '/editor'
+  });
 });
 
 export default Router;

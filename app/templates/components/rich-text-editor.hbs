@@ -1,1 +1,38 @@
-{{yield}}
+<div class="small basic icon buttons ui left floated main menu">
+    {{#semantic-button class="bold" clicked="boldAction" icon="bold"}}{{/semantic-button}}
+    {{#semantic-button class="italic" clicked="italicAction" icon="italic"}}{{/semantic-button}}
+    {{#semantic-button class="underline" clicked="underlineAction" icon="underline"}}{{/semantic-button}}
+</div>
+
+<div class="small basic icon buttons ui left floated main menu">
+  {{#semantic-button class="align align-right" clicked="EditorAlignmentAction" clickedParam="right" icon="align right"}}{{/semantic-button}}
+  {{#semantic-button class="align align-center" clicked="EditorAlignmentAction" clickedParam="center" icon="align center  "}}{{/semantic-button}}
+  {{#semantic-button class="align align-left" clicked="EditorAlignmentAction" clickedParam="left" icon="align left"}}{{/semantic-button}}
+  {{#semantic-button class="align align-justify" clicked="EditorAlignmentAction" clickedParam="justify" icon="align justify"}}{{/semantic-button}}
+</div>
+
+<div class="small basic icon buttons ui left floated main menu">
+  {{#semantic-button class="ordered-list" clicked="makeOrderedListAction" icon="ordered list"}}{{/semantic-button}}
+  {{#semantic-button class="unordered-list" clicked="makeUnorderedListAction" icon="list"}}{{/semantic-button}}
+</div>
+
+<div class="small basic icon buttons ui left floated main menu">
+  {{#semantic-button class="link" clicked="linkAction" icon="linkify"}}{{/semantic-button}}
+  {{#semantic-button class="unlink" clicked="unlinkAction" icon="unlink"}}{{/semantic-button}}
+</div>
+
+{{#semantic-button class="ui basic icon top left pointing dropdown button font-size"}}
+    <i class="text height icon"></i>
+    <div class="menu">
+        <div class="item" data-value="14">Small</div>
+        <div class="item" data-value="20">Medium</div>
+        <div class="item" data-value="26">Large</div>
+    </div>
+{{/semantic-button}}
+
+<div class="ui horizontal divider">
+    <i class="tag icon"></i>
+    Description Area
+</div>
+<div class="clearfix"></div>
+
