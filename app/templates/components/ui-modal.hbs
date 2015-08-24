@@ -1,0 +1,33 @@
+<i class="close icon"></i>
+{{#if title}}
+    <div class="header">
+      {{title}}
+    </div>
+{{/if}}
+<div class="content">
+  {{message}}
+  {{#if contentTemplateName}}
+    {{#if contentController}}
+      {{#with contentController as |controller|}}
+        {{partial contentTemplateName}}
+      {{/with}}
+    {{else}}
+      {{partial contentTemplateName}}
+    {{/if}}
+  {{/if}}
+  {{yield}}
+</div>
+
+<div class="actions">
+    <div class="custom-footer" style="float: left">
+
+    </div>
+  {{#unless isAlert}}
+      <div class="ui black deny button">
+        {{cancel}}
+      </div>
+  {{/unless}}
+    <div class="ui positive right button">
+      {{ok}}
+    </div>
+</div>
